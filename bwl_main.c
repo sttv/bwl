@@ -1,8 +1,7 @@
-
+#include <bwl.h>
 #include <stdio.h>
 
-
-int end(int x) 
+int end_main(int x) 
 {
   printf("\n =============================================");
   printf("\n bwl - better world lisp/scheme implementation");
@@ -12,5 +11,9 @@ int end(int x)
 
 int main(int argc, char * argv[]) 
 {
-  return end(0);
+  int ret = 0;
+  
+
+
+  return end_main(ret);
 }
