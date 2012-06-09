@@ -4,8 +4,8 @@ DBG_FLAGS=-g
 
 all: bwl
 
-bwl: bwl_main.c
-	$(CC) -I$(INCLUDE_DIR) bwl_main.c -o bwl $(DBG_FLAGS)
+bwl: main.c
+	$(CC) -I$(INCLUDE_DIR) main.c -o bwl $(DBG_FLAGS)
 
 clean:
 	find . -iname "*~" | xargs rm -vf
