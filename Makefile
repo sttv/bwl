@@ -4,9 +4,9 @@ DBG_FLAGS=-g
 
 GET_OBJ=$(CC) -I$(INCLUDE_DIR) 
 
-include OBJS.mak
+all: bwl $(OBJS)
 
-all: bwl
+include OBJS.mak
 
 bwl: $(OBJS)
 	$(CC) -I$(INCLUDE_DIR) $(OBJS) -o bwl $(DBG_FLAGS)
